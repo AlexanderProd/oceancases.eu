@@ -7,7 +7,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `OceanCases`,
-    description: `Mode im Zeichen der Burg`,
+    description: `Pflanzen basiertes Plastik für einen sauberen Ozean.`,
     author: `@alexanderhorl`,
     socialLinks: [
       {
