@@ -1,12 +1,30 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import Image from 'gatsby-image'
+import { useStaticQuery } from 'gatsby'
 
 import Page from '~/templates/Page'
-import { useStaticQuery } from 'gatsby'
-import { Img } from '~/utils/styles'
+import { breakpoints } from '~/utils/styles'
 
 const Wrapper = styled.div`
   text-align: center;
+`
+
+const Img = styled(Image)`
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100 %;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+
+  @media (max-width: ${breakpoints.s}px) {
+    width: 100%;
+  }
 `
 
 const UeberUns = () => {
@@ -65,6 +83,7 @@ const UeberUns = () => {
         <Img
           fluid={data.image1.childImageSharp.fluid}
           alt="Planet Earth First"
+          styles="text-align: center; margin-left: auto; margin-right: auto; "
         />
       </Wrapper>
     </Page>
