@@ -83,7 +83,6 @@ const UeberUns = () => {
         <Img
           fluid={data.image1.childImageSharp.fluid}
           alt="Planet Earth First"
-          styles="text-align: center; margin-left: auto; margin-right: auto; "
         />
       </Wrapper>
     </Page>
