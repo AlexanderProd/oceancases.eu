@@ -12,7 +12,7 @@ const Impressum = () => (
       <br />
       Steilstraße 1a
       <br />
-      90513 Zirndord
+      90513 Zirndorf
     </p>
     <h1>
       <strong>
